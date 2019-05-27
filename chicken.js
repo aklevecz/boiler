@@ -39059,6 +39059,7 @@
     N.init({
         dsn: "https://84993a6d11ba432f99bd5fd45cfb21fb@sentry.io/92450"
     });
+    console.log(S.stashlessURL)
     var Y = new h.BatchHttpLink({
             uri: S.stashlessURL + "/graphql",
             batchInterval: 10,
