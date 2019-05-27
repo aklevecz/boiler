@@ -16937,7 +16937,7 @@
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.stashlessURL = "https://stashless.herokuapp.com"
+    }), t.stashlessURL = "https://cors-anywhere.herokuapp.com/https://stashless.herokuapp.com"
 }, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
@@ -39063,7 +39063,6 @@
             uri: S.stashlessURL + "/graphql",
             batchInterval: 10,
             fetch: T.default,
-            fetchOptions: {mode:"no-cors"}
         }),
         P = (0, m.setContext)(function() {
             return {
