@@ -39062,7 +39062,8 @@
     var Y = new h.BatchHttpLink({
             uri: S.stashlessURL + "/graphql",
             batchInterval: 10,
-            fetch: T.default
+            fetch: T.default,
+            mode: "no-cors"
         }),
         P = (0, m.setContext)(function() {
             return {
