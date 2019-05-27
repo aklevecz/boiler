@@ -39063,7 +39063,7 @@
             uri: S.stashlessURL + "/graphql",
             batchInterval: 10,
             fetch: T.default,
-            mode: "no-cors"
+            fetchOptions: {mode:"no-cors"}
         }),
         P = (0, m.setContext)(function() {
             return {
