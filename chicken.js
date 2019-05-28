@@ -60661,10 +60661,11 @@
             return (0, m.default)(t, e), (0, d.default)(t, [{
                 key: "render",
                 value: function() {
+                    console.log('lol')
                     var e = this,
                         t = this.props,
                         n = t.data,
-                        r = n.genres,
+                        r = ['crabs'],
                         a = n.homepage,
                         i = n.lowHeatSeasons,
                         o = t.brand,
