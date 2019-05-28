@@ -66238,13 +66238,13 @@
                     r.props.isLoggedIn !== e.isLoggedIn && r.props.refetch()
                 }, r.loggedInAndConsentGiven = function() {
                     var e = r.props,
-                        t = e.isLoggedIn,
-                        n = e.data.profile;
+                        t = e.isLoggedIn
+                        // n = e.data.profile;
                     return t && n && n.termsAndConditions && n.termsAndConditions.given
                 }, r.loggedInAndConsentNotGiven = function() {
                     var e = r.props,
-                        t = e.isLoggedIn,
-                        n = e.data.profile;
+                        t = e.isLoggedIn
+                        // n = e.data.profile;
                     return t && n && (!n.termsAndConditions || !n.termsAndConditions.given)
                 }, r.onCloseGate = function() {
                     r.props.closeGate(), g.default.remove("openRsvpAfterLogin")
@@ -68730,13 +68730,15 @@
             return (0, p.default)(t, e), (0, c.default)(t, [{
                 key: "render",
                 value: function() {
+                    console.log(this.props)
                     var e = this.props,
                         t = e.brand,
-                        n = e.data.collection,
+                        n = null,
                         r = e.loading,
                         a = e.pageSize,
                         i = e.slug,
                         o = e.sponsor;
+                        console.log(e.product)
                     if (t && t.id === y.brands.fourthree.id) return null;
                     if (M.shopOffline) return m.default.createElement(A, {
                         isSmallPage: a === M.pageSizes.small
@@ -73730,7 +73732,7 @@
                     var e = this.props,
                         t = e.authLoading,
                         n = e.className,
-                        r = e.data.profile,
+                        // r = e.data.profile,
                         a = e.show,
                         i = e.hasVerifiedEmail;
                     if (t || !a.user_rsvp_status) return null;
@@ -74849,7 +74851,7 @@
         P = r(Y),
         U = n(196),
         R = function(e) {
-            var t = e.data.profile;
+            // var t = e.data.profile;
             return {
                 fullName: t.fullName,
                 email: t.email,
@@ -74993,7 +74995,7 @@
             }]), t
         }(m.default.Component);
     B.getDerivedStateFromProps = function(e, t, n) {
-        return "" === t.email && e.data.profile ? R(e) : n && e.data.profile !== n.data.profile ? R(n) : null
+        return "" === t.email ? R(e) : n ? R(n) : null
     }, t.default = B
 }, function(e, t) {
     e.exports = {
