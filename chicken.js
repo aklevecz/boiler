@@ -39064,6 +39064,7 @@
             uri: S.stashlessURL + "/graphql",
             batchInterval: 10,
             fetch: T.default,
+            credentials: 'omit',
         }),
         P = (0, m.setContext)(function() {
             return {
@@ -39079,6 +39080,10 @@
             link: P.concat(Y)
         }),
         B = window.__PRELOADED_STATE__;
+        window.Y = Y;
+        window.h = h;
+        window.T = T;
+
     delete window.__PRELOADED_STATE__, delete window.__APOLLO_STATE__;
     var F = (0, g.createStore)((0, D.default)({
             brand: function() {
