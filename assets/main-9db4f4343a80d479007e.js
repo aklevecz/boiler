@@ -73477,8 +73477,8 @@
       return i.default.createElement("div", {
           className: c.default.Cities
       }, i.default.createElement(l, {
-          slug: "london",
-          title: "London"
+          slug: "san-francisco",
+          title: "San Francisco"
       }), i.default.createElement(l, {
           slug: "berlin",
           title: "Berlin"
