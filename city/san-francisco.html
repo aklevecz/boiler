@@ -1,9 +1,13 @@
 <html lang="en"><head>
     <link href="/assets/main-7a2492637a4b72a51d1e97a8a49b9ca2.css" rel="stylesheet">
     <style>/* The Modal (background) */
+    .what {
+      display:flex;
+      justify-content: center;
+      margin:4em;
+    }
       input {
         width: 80%;
-          margin: 4%;
           height: 2em;
           font-size: 2em;
           text-align: center;
@@ -12,11 +16,11 @@
         font-family:Univers65;
         width: 8em;
     height: 3em;
-    margin: 0.7em;
     background: red;
     font-size: 2em;
     color: white;
     line-height:3.1em;
+    text-align:center;
 
       }
         .modal {
@@ -30,6 +34,7 @@
           overflow: auto; /* Enable scroll if needed */
           background-color: rgb(0,0,0); /* Fallback color */
           background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          justify-content: center;
         }
         
         /* Modal Content/Box */
@@ -547,7 +552,7 @@
   <div style="color:black" class="modal-content">
     <span class="close">&times;</span>
     <h1 style="text-align:center">LAST MINUTE SINGUP</h1>
-    <input id="email" name="email" placeholder="EMAIL"/><input placeholder="NAME" id="name" name="name"/><button type="submit" onclick="sendIt()">SINGUP</button>
+    <div class="what"><input id="email" name="email" placeholder="EMAIL"/></div><div class="what"><input placeholder="NAME" id="name" name="name"/></div><div class="what"><button type="submit" onclick="sendIt()">SINGUP</button></div>
   </div>
 
 </div><script
@@ -16801,10 +16806,10 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 function openModal(){
-  modal.style.display = "block"
+  modal.style.display = "flex"
 }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
